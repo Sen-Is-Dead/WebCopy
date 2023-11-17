@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import include, path
 from django.http import HttpResponse
 
-from .views import register, user_login
+from .views import register, user_login, update_profile
 
 urlpatterns = [
     path('register/', register, name='register'),
     path('login/', user_login, name='login'),
+    path('update-profile/', update_profile, name='update_profile'),
 ]
